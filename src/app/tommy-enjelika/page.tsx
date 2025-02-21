@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { BlurFade } from "@/components/magicui/blur-fade";
+import { CalendarDays } from "lucide-react";
 
 export default function Pages() {
   return (
@@ -57,7 +58,8 @@ export default function Pages() {
               </h1>
             </div>
           </BlurFade>
-          <BlurFade delay={0.75} inView>
+          <BlurFade delay={0.75} inView className="flex gap-1 items-center">
+            <CalendarDays size={16} />
             <p className="text-sm">Minggu, 16 Maret 2025</p>
           </BlurFade>
           <BlurFade delay={1} inView>
