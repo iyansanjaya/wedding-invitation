@@ -68,6 +68,27 @@ export default function Pages() {
             </BlurFade>
           </div>
         </div>
+        <div className="h-svh relative max-w-[64rem] m-auto bg-[linear-gradient(rgba(0,0,0,0.0),rgba(0,0,0,0.0)),url(/img/bg.webp)] bg-cover bg-center">
+          <div className="flex flex-col gap-2 items-center justify-center text-center px-10">
+            <Image
+              src="/img/man-2.webp"
+              alt="image"
+              width={1000}
+              height={1000}
+              style={{
+                height: "auto",
+                objectFit: "contain",
+              }}
+              className="w-[100%] lg:w-[70%] pt-14 pb-4"
+            />
+            <p className="text-lg">Tommi (Darto)</p>
+            <p className="font-bold text-2xl">OEY, TOMMI</p>
+            <div className="text-sm">
+              <p>Putra keempat dari lima bersaudara Dari</p>
+              <p>(Alm) Tuan. Tek Kwi dan Nyonya Oey, Siaw Bie </p>
+            </div>
+          </div>
+        </div>
       </main>
     </>
   );
