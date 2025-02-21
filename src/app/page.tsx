@@ -1,6 +1,6 @@
 export default function Home() {
   return (
-    <div className="h-lvh p-8">
+    <div className="h-svh p-8">
       <main>
         <p>
           Join us in celebrating our special day with a beautiful wedding

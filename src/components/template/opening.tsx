@@ -38,7 +38,7 @@ const InvitationOverlay: React.FC<InvitationOverlayProps> = ({
   return (
     <div
       className={`
-        fixed inset-0 bg-[#830101] z-50 
+        bg-[linear-gradient(rgba(0,0,0,0.0),rgba(0,0,0,0.0)),url(/img/bg.webp)] bg-cover bg-center fixed inset-0 bg-[#830101] z-50 
         flex flex-col items-center justify-center text-white
         transition-all duration-500 ease-in-out
         ${isVisible ? "opacity-100" : "opacity-0"}
