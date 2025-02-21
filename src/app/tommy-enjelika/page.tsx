@@ -2,8 +2,8 @@ import Image from "next/image";
 
 export default function Pages() {
   return (
-    <main className="h-lvh bg-[#830101] text-white">
-      <div className="h-lvh relative flex justify-center max-w-[768px] m-auto">
+    <main className="h-dvh bg-[#830101] text-white">
+      <div className="h-dvh relative flex justify-center max-w-[768px] m-auto">
         <Image
           src="/img/lampion.webp"
           alt="lampion"
