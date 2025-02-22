@@ -1,7 +1,18 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 import { ThemeProvider } from "@/components/template/theme-provider";
+
+const go3v2 = localFont({
+  src: "../../public/fonts/go3v2.ttf",
+  display: "swap",
+});
+
+const chineseShangai = localFont({
+  src: "../../public/fonts/ChineseShangaiDemoVersionRegular-p7Eyy.ttf",
+  display: "swap",
+});
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,7 +38,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased font-[family-name:var(--font-geist-sans)] bg-[#830101]`}
+        className={`${geistSans.variable} ${geistMono.variable} ${go3v2.className} ${chineseShangai.className} antialiased font-[family-name:var(--font-geist-sans)] bg-[#830101]`}
       >
         <ThemeProvider
           attribute="class"

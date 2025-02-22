@@ -42,7 +42,7 @@ export default function Pages() {
               </p>
             </BlurFade>
             <BlurFade delay={0.5} inView>
-              <div className="space-y-1 text-center">
+              <div className="font-chineseShangai space-y-1 text-center">
                 <h1 className="px-[50px] font-bold text-3xl lg:text-4xl">
                   ENJELIKA
                 </h1>
@@ -83,7 +83,7 @@ export default function Pages() {
               className="w-[100%] lg:w-[50%] pt-14 pb-4"
             />
             <p className="text-lg">Tommi (Darto)</p>
-            <p className="font-bold text-2xl">OEY, TOMMI</p>
+            <p className="font-chineseShangai font-bold text-2xl">OEY, TOMMI</p>
             <div className="text-sm">
               <p>Putra keempat dari lima bersaudara Dari</p>
               <p>(Alm) Tuan. Tek Kwi dan Nyonya Oey, Siaw Bie </p>

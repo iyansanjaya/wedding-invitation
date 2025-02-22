@@ -69,6 +69,12 @@ html {
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
   }
+  .font-go3v2 {
+    font-family: "go3v2", sans-serif;
+  }
+  .font-chineseShangai {
+    font-family: "chineseShangai", sans-serif;
+  }
 }
 
 @layer base {
