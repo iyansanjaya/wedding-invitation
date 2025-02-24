@@ -8,6 +8,7 @@ import { ShinyButton } from "@/components/3partys/magicui/shiny-button";
 import Link from "next/link";
 import Countdown from "@/components/atoms/countdown";
 import SaveToCalendar from "@/components/atoms/save-to-calendar";
+import Music from "@/components/atoms/music";
 
 export default function Pages() {
   const date = new Date();
@@ -15,7 +16,10 @@ export default function Pages() {
 
   return (
     <>
-      <main className="h-full bg-[#830101] text-white bg-[linear-gradient(rgba(0,0,0,0.0),rgba(0,0,0,0.0)),url(/img/bg.webp)] bg-center">
+      <main className="relative h-full bg-[#830101] text-white bg-[linear-gradient(rgba(0,0,0,0.0),rgba(0,0,0,0.0)),url(/img/bg.webp)] bg-center">
+        <div className="fixed z-40 fixed bottom-3 right-3">
+          <Music />
+        </div>
         <div className="h-svh relative flex justify-center max-w-[64rem] m-auto">
           <InvitationOverlay />
           <Image

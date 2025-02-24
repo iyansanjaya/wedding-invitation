@@ -3,7 +3,6 @@
 import { useEffect, useState } from "react";
 
 const Countdown = () => {
-  const targetDate = new Date("2025-03-16T10:00:00").getTime();
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
     hours: 0,
@@ -12,6 +11,8 @@ const Countdown = () => {
   });
 
   useEffect(() => {
+    const targetDate = new Date("2025-03-16T10:00:00").getTime(); // Pindahkan ke dalam useEffect
+
     const calculateTimeLeft = () => {
       const now = new Date().getTime();
       const difference = targetDate - now;
@@ -37,7 +38,7 @@ const Countdown = () => {
     }, 1000);
 
     return () => clearInterval(timer);
-  }, []); // ✅ Tidak ada peringatan lagi karena tidak ada function di dependency array
+  }, []); // Tetap gunakan dependency array kosong
 
   return (
     <div className="flex gap-4 text-xl">
