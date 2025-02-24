@@ -35,7 +35,7 @@ export default function Pages() {
             }}
             className="absolute bottom-0 z-20 w-[100%] lg:w-[66%]"
           />
-          <div className="flex flex-col items-center gap-5 text-[12px] lg:text-base text-center pt-[10%] lg:pt-[2%] px-8 lg:px-24 z-20">
+          <div className="flex flex-col items-center gap-5 text-[12px] lg:text-base text-center pt-[8%] lg:pt-[2%] px-8 lg:px-24 z-20">
             <BlurFade delay={0.25} inView>
               <p className="mt-[14%] lg:mt-[15%] text-[13px] lg:text-base px-4 py-1 border rounded-full uppercase font-bold">
                 Sangjit & Pemberkatan
@@ -69,33 +69,82 @@ export default function Pages() {
             </BlurFade>
           </div>
         </div>
-        <div className="h-svh relative max-w-[64rem] m-auto">
+        <div className="max-w-[64rem] m-auto py-14 space-y-14">
           <div className="flex flex-col gap-2 items-center justify-center text-center px-10">
-            <Image
-              src="/img/man-2.webp"
-              alt="image"
-              width={1000}
-              height={1000}
-              style={{
-                height: "auto",
-                objectFit: "contain",
-              }}
-              className="w-[100%] lg:w-[50%] pt-14 pb-4"
-            />
-            <p className="text-lg">Tommi (Darto)</p>
-            <p className="font-chineseShangai font-bold text-2xl">OEY, TOMMI</p>
-            <div className="text-sm">
-              <p>Putra keempat dari lima bersaudara Dari</p>
-              <p>(Alm) Tuan. Tek Kwi dan Nyonya Oey, Siaw Bie </p>
-            </div>
-            <Link href="#" className="pt-4">
-              <ShinyButton className="bg-white">
-                <div className="flex flex-row gap-2 items-center">
-                  <Instagram size={16} />
-                  Instagram
-                </div>
-              </ShinyButton>
-            </Link>
+            <BlurFade delay={0.25} inView>
+              <Image
+                src="/img/man-2.webp"
+                alt="image"
+                width={1000}
+                height={1000}
+                style={{
+                  height: "auto",
+                  objectFit: "contain",
+                }}
+                className="w-[100%] lg:w-[50%] pb-4"
+              />
+            </BlurFade>
+            <BlurFade delay={0.4} inView className="space-y-2">
+              <p className="text-lg">Tommi (Darto)</p>
+              <p className="font-chineseShangai font-bold text-2xl">
+                OEY, TOMMI
+              </p>
+              <div className="text-sm">
+                <p>Putra keempat dari lima bersaudara dari</p>
+                <p>(Alm) Tuan. Tek Kwi dan Nyonya Oey, Siaw Bie </p>
+              </div>
+            </BlurFade>
+            <BlurFade delay={0.55} inView className="pt-4">
+              <Link
+                href="https://instagram.com/tommypedrosa88"
+                rel="noopener"
+                target="_blank"
+              >
+                <ShinyButton className="bg-white">
+                  <div className="flex flex-row gap-2 items-center">
+                    <Instagram size={16} />
+                    Instagram
+                  </div>
+                </ShinyButton>
+              </Link>
+            </BlurFade>
+          </div>
+          <div className="flex flex-col gap-2 items-center justify-center text-center px-10">
+            <BlurFade delay={0.7} inView>
+              <Image
+                src="/img/woman-2.webp"
+                alt="image"
+                width={1000}
+                height={1000}
+                style={{
+                  height: "auto",
+                  objectFit: "contain",
+                }}
+                className="w-[100%] lg:w-[50%] pb-4"
+              />
+            </BlurFade>
+            <BlurFade delay={0.25} inView className="space-y-2">
+              <p className="text-lg">Enjell</p>
+              <p className="font-chineseShangai font-bold text-2xl">ENJELIKA</p>
+              <div className="text-sm">
+                <p>Putri terakhir dari dua bersaudara dari</p>
+                <p>(Alm) Tuan.Eng Kiu dan Nyonya Anti Ernawati</p>
+              </div>
+            </BlurFade>
+            <BlurFade delay={0.25} inView className="pt-4">
+              <Link
+                href="https://instagram.com/e.enjlika4"
+                rel="noopener"
+                target="_blank"
+              >
+                <ShinyButton className="bg-white">
+                  <div className="flex flex-row gap-2 items-center">
+                    <Instagram size={16} />
+                    Instagram
+                  </div>
+                </ShinyButton>
+              </Link>
+            </BlurFade>
           </div>
         </div>
       </main>

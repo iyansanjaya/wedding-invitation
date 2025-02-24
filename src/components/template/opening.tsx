@@ -1,13 +1,17 @@
+import { MailOpen } from "lucide-react";
 import React, { useState, useEffect } from "react";
+import { Button } from "../3partys/shadcn/button";
 
 interface InvitationOverlayProps {
   title?: string;
+  title2?: string;
   bride?: string;
   groom?: string;
 }
 
 const InvitationOverlay: React.FC<InvitationOverlayProps> = ({
-  title = "Undangan Sangjit & Pemberkatan",
+  title = "Undangan",
+  title2 = "Sangjit & Pemberkatan",
   bride = "ENJELIKA",
   groom = "OEY, TOMMI (DARTO)",
 }) => {
@@ -22,7 +26,6 @@ const InvitationOverlay: React.FC<InvitationOverlayProps> = ({
       document.body.style.overflow = "unset";
     }
 
-    // Cleanup function
     return () => {
       document.body.style.overflow = "unset";
     };
@@ -30,7 +33,7 @@ const InvitationOverlay: React.FC<InvitationOverlayProps> = ({
 
   const handleClose = () => {
     setIsVisible(false);
-    setTimeout(() => setIsOpen(false), 500); // Match with transition duration
+    setTimeout(() => setIsOpen(false), 500);
   };
 
   if (!isOpen) return null;
@@ -40,32 +43,37 @@ const InvitationOverlay: React.FC<InvitationOverlayProps> = ({
       className={`
         bg-[linear-gradient(rgba(0,0,0,0.0),rgba(0,0,0,0.0)),url(/img/bg.webp)] bg-cover bg-center fixed inset-0 bg-[#830101] z-50 
         flex flex-col items-center justify-center text-white
-        transition-all duration-500 ease-in-out
+        transition-all duration-500 ease-in-out px-8
         ${isVisible ? "opacity-100" : "opacity-0"}
       `}
     >
       <div
         className={`
-        text-center space-y-6 
-        transition-all duration-500 ease-in-out
+        flex flex-col gap-10 items-center justify-center
+        text-center
+        transition-all duration-500 ease-in-out uppercase
         ${isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"}
       `}
       >
-        <h2 className="text-2xl md:text-3xl font-bold">{title}</h2>
-        <div className="space-y-1">
-          <p className="text-xl md:text-2xl">{bride}</p>
-          <p className="text-xl md:text-2xl">&</p>
-          <p className="text-xl md:text-2xl">{groom}</p>
+        <div className="space-y-3">
+          <h2 className="text-4xl md:text-3xl font-bold">{title}</h2>
+          <h2 className="text-lg md:text-3xl font-bold px-6 py-1 border rounded-full">
+            {title2}
+          </h2>
         </div>
-        <button
+        <div className="space-y-1 font-chineseShangai font-bold">
+          <p className="text-3xl md:text-2xl">{bride}</p>
+          <p className="text-3xl md:text-2xl">&</p>
+          <p className="text-3xl md:text-2xl">{groom}</p>
+        </div>
+        <Button
+          variant="secondary"
           onClick={handleClose}
-          className="px-6 py-3 rounded-full border-2 border-white 
-                   hover:bg-white hover:text-[#830101] 
-                   transition-colors duration-300 
-                   text-sm md:text-base font-semibold"
+          className="rounded-full w-max px-6 py-6"
         >
+          <MailOpen size={20} />
           Buka Undangan
-        </button>
+        </Button>
       </div>
     </div>
   );
