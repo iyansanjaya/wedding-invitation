@@ -71,7 +71,11 @@ export default function Pages() {
         </div>
         <div className="max-w-[64rem] m-auto py-14 space-y-14">
           <div className="flex flex-col gap-2 items-center justify-center text-center px-10">
-            <BlurFade delay={0.25} inView>
+            <BlurFade
+              delay={0.25}
+              inView
+              className="flex items-center justify-center"
+            >
               <Image
                 src="/img/man-2.webp"
                 alt="image"
@@ -110,7 +114,11 @@ export default function Pages() {
             </BlurFade>
           </div>
           <div className="flex flex-col gap-2 items-center justify-center text-center px-10">
-            <BlurFade delay={0.7} inView>
+            <BlurFade
+              delay={0.7}
+              inView
+              className="flex items-center justify-center"
+            >
               <Image
                 src="/img/woman-2.webp"
                 alt="image"
