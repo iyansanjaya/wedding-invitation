@@ -57,7 +57,7 @@ export default function Music() {
     <Button
       variant="secondary"
       size="icon"
-      className="rounded-full bg-red-800 text-white"
+      className="rounded-full bg-red-800 hover:bg-red-900 text-white"
       onClick={togglePlay}
     >
       {isPlaying ? <PauseIcon /> : <Music2 />}
