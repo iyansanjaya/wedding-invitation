@@ -12,7 +12,7 @@ export default function Music() {
     audioRef.current = new Audio(
       "https://poronesia.oss-ap-southeast-5.aliyuncs.com/Iyan/Tong%20Hua.mp3"
     );
-    audioRef.current.volume = 0.5;
+    audioRef.current.volume = 0.8;
     audioRef.current.loop = true;
     audioRef.current.onended = () => setIsPlaying(false);
 
