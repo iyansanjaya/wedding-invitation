@@ -175,7 +175,7 @@ export default function Pages() {
                 height: "auto",
                 objectFit: "contain",
               }}
-              className="rounded-0 lg:rounded-2xl w-[100%]"
+              className="rounded-0 lg:rounded-2xl w-[100%] max-w-[50rem]"
             />
           </BlurFade>
           <div className="flex flex-col gap-10 items-center justify-center text-center px-10">
@@ -257,14 +257,14 @@ export default function Pages() {
           <BlurFade delay={0.25} inView>
             <Image
               src="/img/bg3.webp"
-              alt="Background 2"
+              alt="Background 3"
               width={2000}
               height={2000}
               style={{
                 height: "auto",
                 objectFit: "contain",
               }}
-              className="rounded-0 lg:rounded-2xl w-[100%]"
+              className="rounded-0 lg:rounded-2xl w-[100%] max-w-[50rem]"
             />
           </BlurFade>
         </div>
