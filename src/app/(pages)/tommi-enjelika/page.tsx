@@ -141,7 +141,7 @@ export default function Pages() {
               />
             </BlurFade>
             <BlurFade delay={0.25} inView className="space-y-2">
-              <p className="text-lg">Enjell</p>
+              <p className="text-lg">Enjel</p>
               <p className="font-chineseShangai font-bold text-2xl">ENJELIKA</p>
               <div className="text-sm">
                 <p>Putri terakhir dari dua bersaudara dari</p>
