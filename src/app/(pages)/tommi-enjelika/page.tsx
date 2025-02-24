@@ -33,7 +33,7 @@ export default function Pages() {
             style={{
               height: "auto",
             }}
-            className="absolute bottom-0 z-20 w-[100%] md:w-[66%]"
+            className="absolute bottom-0 z-20 w-full md:w-[66%]"
           />
           <div className="flex flex-col items-center gap-5 text-[12px] md:text-base text-center pt-[8%] md:pt-[2%] px-8 md:px-24 z-20">
             <BlurFade delay={0.25} inView>
@@ -85,7 +85,7 @@ export default function Pages() {
                   height: "auto",
                   objectFit: "contain",
                 }}
-                className="w-[100%] md:w-[50%] pb-4"
+                className="w-full md:w-[50%] pb-4"
               />
             </BlurFade>
             <BlurFade delay={0.4} inView className="space-y-2">
@@ -154,6 +154,21 @@ export default function Pages() {
               </Link>
             </BlurFade>
           </div>
+        </div>
+        <div className="flex justify-center items-center">
+          <BlurFade delay={0.25} inView>
+            <Image
+              src="/img/bg2.webp"
+              alt="Background 2"
+              width={2000}
+              height={2000}
+              style={{
+                height: "auto",
+                objectFit: "contain",
+              }}
+              className="rounded-0 lg:rounded-2xl w-[100%] max-w-[768px]"
+            />
+          </BlurFade>
         </div>
       </main>
     </>
