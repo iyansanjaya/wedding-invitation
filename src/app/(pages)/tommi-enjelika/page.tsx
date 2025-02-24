@@ -2,10 +2,12 @@
 
 import Image from "next/image";
 import { BlurFade } from "@/components/3partys/magicui/blur-fade";
-import { CalendarDays, Instagram } from "lucide-react";
+import { CalendarDays, Heart, Instagram, MapPinned } from "lucide-react";
 import InvitationOverlay from "@/components/template/opening";
 import { ShinyButton } from "@/components/3partys/magicui/shiny-button";
 import Link from "next/link";
+import Countdown from "@/components/atoms/countdown";
+import SaveToCalendar from "@/components/atoms/save-to-calendar";
 
 export default function Pages() {
   return (
@@ -155,7 +157,7 @@ export default function Pages() {
             </BlurFade>
           </div>
         </div>
-        <div className="flex justify-center items-center">
+        <div className="flex flex-col gap-12 justify-center items-center pb-[90px]">
           <BlurFade delay={0.25} inView>
             <Image
               src="/img/bg2.webp"
@@ -166,9 +168,83 @@ export default function Pages() {
                 height: "auto",
                 objectFit: "contain",
               }}
-              className="rounded-0 lg:rounded-2xl w-[100%] max-w-[768px]"
+              className="rounded-0 lg:rounded-2xl w-[100%]"
             />
           </BlurFade>
+          <div className="flex flex-col gap-10 items-center justify-center text-center px-10">
+            <h1 className="font-bold text-3xl md:text-4xl">Counting Day</h1>
+            <Countdown />
+            <SaveToCalendar />
+            <div className="space-y-6">
+              <div>
+                <div className="flex gap-4 items-center justify-center">
+                  <Heart size={24} fill="#fff" />
+                  <h1 className="font-bold text-2xl md:text-3xl uppercase">
+                    Sangjit
+                  </h1>
+                  <Heart size={24} fill="#fff" />
+                </div>
+                <p>Minggu, 16 Maret 2025</p>
+              </div>
+              <p className="font-bold text-lg">Pukul 10:00 - 14:00 WIB</p>
+              <div className="space-y-1">
+                <p>Bertempat di:</p>
+                <p className="font-bold">Pondok Sentul</p>
+                <p className="text-sm italic">
+                  Curug Kulon, Kec. Curug, Kabupaten Tangerang, Banten 15810
+                </p>
+              </div>
+              <div>
+                <Link
+                  href="https://maps.app.goo.gl/TqWMjwWKXkpk62su5"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <ShinyButton className="bg-white">
+                    <div className="flex flex-row gap-2 items-center">
+                      <MapPinned size={16} />
+                      Google Maps
+                    </div>
+                  </ShinyButton>
+                </Link>
+              </div>
+            </div>
+            <div className="space-y-6">
+              <div>
+                <div className="flex gap-2 items-center justify-center">
+                  <Heart size={24} fill="#fff" />
+                  <h1 className="font-bold text-2xl md:text-3xl uppercase">
+                    Pemberkatan
+                  </h1>
+                  <Heart size={24} fill="#fff" />
+                </div>
+                <p>Minggu, 16 Maret 2025</p>
+              </div>
+              <p className="font-bold text-lg">Pukul 16:00 - 18:00 WIB</p>
+              <div className="space-y-1">
+                <p>Bertempat di:</p>
+                <p className="font-bold">Vihara Gunavardhana</p>
+                <p className="text-sm italic">
+                  Perumahan Dasana Indah RT.002, RT.002/RW.029, Bojong Nangka,
+                  Kec. Klp. Dua, Kabupaten Tangerang, Banten 15810
+                </p>
+              </div>
+              <div>
+                <Link
+                  href="https://maps.app.goo.gl/rnzRh13ngyaEEJcb8"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <ShinyButton className="bg-white">
+                    <div className="flex flex-row gap-2 items-center">
+                      <MapPinned size={16} />
+                      Google Maps
+                    </div>
+                  </ShinyButton>
+                </Link>
+              </div>
+            </div>
+          </div>
         </div>
       </main>
     </>
