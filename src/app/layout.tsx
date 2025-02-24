@@ -27,9 +27,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Weding Invitation",
+  title: "Wedding Invitation",
   description:
-    "Join us in celebrating our special day with a beautiful wedding invitation. Find all the details about the event, RSVP, and more.",
+    "Join us in celebrating our special day with a beautiful wedding invitation. Find all the details about the event and more.",
 };
 
 export default function RootLayout({
