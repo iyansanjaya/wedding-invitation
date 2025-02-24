@@ -56,20 +56,20 @@ const InvitationOverlay: React.FC<InvitationOverlayProps> = ({
       `}
       >
         <div className="space-y-3">
-          <h2 className="text-4xl md:text-3xl font-bold">{title}</h2>
-          <h2 className="text-lg md:text-3xl font-bold px-6 py-1 border rounded-full">
+          <h2 className="text-4xl font-bold">{title}</h2>
+          <h2 className="text-lg md:text-2xl font-bold px-6 py-1 border rounded-full">
             {title2}
           </h2>
         </div>
         <div className="space-y-1 font-chineseShangai font-bold">
-          <p className="text-3xl md:text-2xl">{bride}</p>
-          <p className="text-3xl md:text-2xl">&</p>
-          <p className="text-3xl md:text-2xl">{groom}</p>
+          <p className="text-3xl md:text-4xl">{bride}</p>
+          <p className="text-3xl md:text-4xl">&</p>
+          <p className="text-3xl md:text-4xl">{groom}</p>
         </div>
         <Button
           variant="secondary"
           onClick={handleClose}
-          className="rounded-full w-max px-6 py-6"
+          className="rounded-full w-max px-6 py-6 uppercase flex gap-2 items-center [&_svg]:mt-[-2px]"
         >
           <MailOpen size={20} />
           Buka Undangan
