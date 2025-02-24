@@ -104,7 +104,7 @@ export default function Pages() {
               </p>
               <div className="text-sm">
                 <p>Putra keempat dari lima bersaudara dari</p>
-                <p>(Alm) Tuan. Tek Kwi dan Nyonya Oey, Siaw Bie </p>
+                <p>(Alm) Tuan. Tek Kim dan Nyonya Oey, Sian Bwee </p>
               </div>
             </BlurFade>
             <BlurFade delay={0.55} inView className="pt-4">
@@ -145,7 +145,7 @@ export default function Pages() {
               <p className="font-chineseShangai font-bold text-2xl">ENJELIKA</p>
               <div className="text-sm">
                 <p>Putri terakhir dari dua bersaudara dari</p>
-                <p>(Alm) Tuan.Eng Kiu dan Nyonya Anti Ernawati</p>
+                <p>(Alm) Tuan. Eng Kiu dan Nyonya Anti Ernawati</p>
               </div>
             </BlurFade>
             <BlurFade delay={0.25} inView className="pt-4">
