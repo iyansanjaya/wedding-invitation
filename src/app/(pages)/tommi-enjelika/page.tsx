@@ -22,7 +22,7 @@ export default function Pages() {
             style={{
               height: "auto",
             }}
-            className="absolute bottom-20 z-10 w-[86%] lg:w-[54%]"
+            className="absolute bottom-20 z-10 w-[86%] md:w-[54%]"
           />
           <Image
             src="/img/image-foot.webp"
@@ -33,21 +33,21 @@ export default function Pages() {
             style={{
               height: "auto",
             }}
-            className="absolute bottom-0 z-20 w-[100%] lg:w-[66%]"
+            className="absolute bottom-0 z-20 w-[100%] md:w-[66%]"
           />
-          <div className="flex flex-col items-center gap-5 text-[12px] lg:text-base text-center pt-[8%] lg:pt-[2%] px-8 lg:px-24 z-20">
+          <div className="flex flex-col items-center gap-5 text-[12px] md:text-base text-center pt-[8%] md:pt-[2%] px-8 md:px-24 z-20">
             <BlurFade delay={0.25} inView>
-              <p className="mt-[14%] lg:mt-[15%] text-[13px] lg:text-base px-4 py-1 border rounded-full uppercase font-bold">
+              <p className="mt-[14%] md:mt-[15%] text-[13px] md:text-base px-4 py-1 border rounded-full uppercase font-bold">
                 Sangjit & Pemberkatan
               </p>
             </BlurFade>
             <BlurFade delay={0.5} inView>
               <div className="font-chineseShangai space-y-1 text-center">
-                <h1 className="px-[50px] font-bold text-3xl lg:text-4xl">
+                <h1 className="px-[50px] font-bold text-3xl md:text-4xl">
                   ENJELIKA
                 </h1>
-                <h1 className="px-[50px] font-bold text-3xl lg:text-4xl">&</h1>
-                <h1 className="px-[50px] font-bold text-3xl lg:text-4xl text-center">
+                <h1 className="px-[50px] font-bold text-3xl md:text-4xl">&</h1>
+                <h1 className="px-[50px] font-bold text-3xl md:text-4xl text-center">
                   OEY, TOMMI (DARTO)
                 </h1>
               </div>
@@ -85,7 +85,7 @@ export default function Pages() {
                   height: "auto",
                   objectFit: "contain",
                 }}
-                className="w-[100%] lg:w-[50%] pb-4"
+                className="w-[100%] md:w-[50%] pb-4"
               />
             </BlurFade>
             <BlurFade delay={0.4} inView className="space-y-2">
@@ -128,7 +128,7 @@ export default function Pages() {
                   height: "auto",
                   objectFit: "contain",
                 }}
-                className="w-[100%] lg:w-[50%] pb-4"
+                className="w-[100%] md:w-[50%] pb-4"
               />
             </BlurFade>
             <BlurFade delay={0.25} inView className="space-y-2">
