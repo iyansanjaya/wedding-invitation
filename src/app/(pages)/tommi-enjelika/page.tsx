@@ -10,6 +10,9 @@ import Countdown from "@/components/atoms/countdown";
 import SaveToCalendar from "@/components/atoms/save-to-calendar";
 
 export default function Pages() {
+  const date = new Date();
+  const year = date.getFullYear();
+
   return (
     <>
       <main className="h-full bg-[#830101] text-white bg-[linear-gradient(rgba(0,0,0,0.0),rgba(0,0,0,0.0)),url(/img/bg.webp)] bg-center">
@@ -157,7 +160,7 @@ export default function Pages() {
             </BlurFade>
           </div>
         </div>
-        <div className="flex flex-col gap-12 justify-center items-center pb-[90px]">
+        <div className="flex flex-col gap-12 justify-center items-center">
           <BlurFade delay={0.25} inView>
             <Image
               src="/img/bg2.webp"
@@ -172,10 +175,12 @@ export default function Pages() {
             />
           </BlurFade>
           <div className="flex flex-col gap-10 items-center justify-center text-center px-10">
-            <h1 className="font-bold text-3xl md:text-4xl">Counting Day</h1>
-            <Countdown />
-            <SaveToCalendar />
-            <div className="space-y-6">
+            <BlurFade delay={0.25} inView className="space-y-10">
+              <h1 className="font-bold text-3xl md:text-4xl">Counting Day</h1>
+              <Countdown />
+              <SaveToCalendar />
+            </BlurFade>
+            <BlurFade delay={0.5} inView className="space-y-6">
               <div>
                 <div className="flex gap-4 items-center justify-center">
                   <Heart size={24} fill="#fff" />
@@ -208,8 +213,8 @@ export default function Pages() {
                   </ShinyButton>
                 </Link>
               </div>
-            </div>
-            <div className="space-y-6">
+            </BlurFade>
+            <BlurFade delay={0.75} inView className="space-y-6">
               <div>
                 <div className="flex gap-2 items-center justify-center">
                   <Heart size={24} fill="#fff" />
@@ -243,8 +248,34 @@ export default function Pages() {
                   </ShinyButton>
                 </Link>
               </div>
-            </div>
+            </BlurFade>
           </div>
+          <BlurFade delay={0.25} inView>
+            <Image
+              src="/img/bg3.webp"
+              alt="Background 2"
+              width={2000}
+              height={2000}
+              style={{
+                height: "auto",
+                objectFit: "contain",
+              }}
+              className="rounded-0 lg:rounded-2xl w-[100%]"
+            />
+          </BlurFade>
+        </div>
+        <div className="px-8 py-4 bg-white md:bg-transparent font-light text-[12px] text-black md:text-white text-center">
+          <p>Copyright © {year} All Rights Reserved</p>
+          <p>
+            Created by{" "}
+            <Link
+              href="https://iyansanjaya.my.id"
+              target="_blank"
+              rel="noopener norefferer"
+            >
+              <b>Iyan Sanjaya</b>
+            </Link>
+          </p>
         </div>
       </main>
     </>
